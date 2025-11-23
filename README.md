@@ -1,40 +1,104 @@
 # QuantumEdge-ResolveIt
 
-## 🚀 About
-
-A collaborative issue resolution platform developed by **Team QuantumEdge**.
-
-This project aims to provide an efficient and streamlined system for managing and resolving issues in software development projects.
-
-## 👥 Team
-
-**Team QuantumEdge**
-- Building innovative solutions for modern software challenges
-- Focused on collaboration and efficiency
-
-## 🛠️ Technologies
-
-- Java
-- [Additional technologies to be added]
-
-## 📝 Features
-
-- Issue tracking and management
-- Collaborative problem-solving
-- Efficient resolution workflow
-- [More features coming soon]
-
-## 🎯 Project Goals
-
-1. Create an intuitive interface for issue management
-2. Enable seamless team collaboration
-3. Provide comprehensive tracking and reporting
-4. Ensure scalability and performance
-
-## 📄 License
-
-This project is developed by Team QuantumEdge.
+### Complaint & Feedback Management System
 
 ---
 
-**Developed with ⚡ by Team QuantumEdge**
+## ✅ Project Overview
+
+ResolveIt is a Java-based application that enables users to register complaints, track their status, and receive updates digitally. Administrators can view all complaints, update their status, and manage responses efficiently. It simplifies communication between users and the management team by providing a centralized, digital complaint management system.
+
+---
+
+## 🎯 Objectives
+
+- Provide a simple digital platform for complaint submission
+- Reduce paperwork and ensure faster resolution
+- Improve transparency and communication between users & admin
+- Allow admins to monitor, manage, and respond to issues easily
+- Maintain a central database for storing complaint history
+
+---
+
+## 👥 System Users
+
+### User Module
+- Register & Login
+- Submit new complaint
+- View complaint status
+- Track previous complaints
+
+### Admin Module
+- Admin login
+- View all submitted complaints
+- Update complaint status (Pending, In Progress, Resolved)
+- Manage users & complaints
+
+---
+
+## 🧩 Key Features
+
+### User Features
+- Complaint submission form
+- Real-time status tracking
+- Simple login/registration
+- Structured complaint categories
+
+### Admin Features
+- Centralized complaint dashboard
+- Status update functionality
+- View complaints by user or category
+- Efficient monitoring of system performance
+
+---
+
+## 🏗 System Architecture
+
+A 3-layer architecture:
+- **Presentation Layer (UI / Console):** Accepts user/admin input, shows responses and complaint lists
+- **Application/Service Layer:** Business logic, validation & processing, routes tasks between UI and database
+- **Database Layer (MySQL):** Stores users, complaints, and feedback; uses JDBC; executes SQL queries
+
+---
+
+## 🗄 Database Schema
+
+### Users Table
+| Field       | Description |
+|-------------|-------------|
+| user_id     | Primary Key |
+| username    | Login name  |
+| password    | Hashed PW   |
+| email       | Contact     |
+| role        | user/admin  |
+
+### Complaints Table
+| Field         | Description       |
+|---------------|------------------|
+| complaint_id  | Primary Key      |
+| user_id       | FK to Users      |
+| category      | Complaint type   |
+| description   | Details          |
+| status        | Pending/In Progress/Resolved |
+| created_at    | Timestamp        |
+| updated_at    | Last update      |
+
+---
+
+## 🗄 Technologies Used
+- Java (Core)
+- MySQL
+- JDBC (Java Database Connectivity)
+- IntelliJ IDEA / VS Code / Eclipse
+- OOP, Classes, DAO Pattern, SQL, Exception Handling
+
+---
+
+## 🌐 Instructions for Submission
+- Github link should be public
+- README explains project setup, requirements, and how to run
+- Code should be well-commented, modular, use proper coding standards
+
+---
+
+**Developed by Team QuantumEdge**
