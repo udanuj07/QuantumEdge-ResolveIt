@@ -23,20 +23,10 @@ ResolveIt is a Java-based application that enables users to register complaints,
 ## 👥 System Users
 
 ### User Module
-- Register & Login
 - Submit new complaint
 - View complaint status
 - Track previous complaints
 
-### Admin Module
-- Admin login
-- View all submitted complaints
-- Update complaint status (Pending, In Progress, Resolved)
-- Manage users & complaints
-
----
-
-## 🧩 Key Features
 
 ### User Features
 - Complaint submission form
@@ -52,15 +42,6 @@ ResolveIt is a Java-based application that enables users to register complaints,
 
 ---
 
-## 🏗 System Architecture
-
-A 3-layer architecture:
-- **Presentation Layer (UI / Console):** Accepts user/admin input, shows responses and complaint lists
-- **Application/Service Layer:** Business logic, validation & processing, routes tasks between UI and database
-- **Database Layer (MySQL):** Stores users, complaints, and feedback; uses JDBC; executes SQL queries
-
----
-
 ## 🗄 Database Schema
 
 ### Users Table
@@ -69,7 +50,6 @@ A 3-layer architecture:
 | user_id     | Primary Key |
 | username    | Login name  |
 | password    | Hashed PW   |
-| email       | Contact     |
 | role        | user/admin  |
 
 ### Complaints Table
@@ -79,9 +59,7 @@ A 3-layer architecture:
 | user_id       | FK to Users      |
 | category      | Complaint type   |
 | description   | Details          |
-| status        | Pending/In Progress/Resolved |
-| created_at    | Timestamp        |
-| updated_at    | Last update      |
+| status        | Pending/In Progress/Resolved 
 
 ---
 
@@ -89,7 +67,7 @@ A 3-layer architecture:
 - Java (Core)
 - MySQL
 - JDBC (Java Database Connectivity)
-- IntelliJ IDEA / VS Code / Eclipse
+- IntelliJ IDEA 
 - OOP, Classes, DAO Pattern, SQL, Exception Handling
 
 ---
